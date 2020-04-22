@@ -1,0 +1,9 @@
+define NROOT [ { mad } | { nat } | { posk } | { rip } | { kuzm } | { karj } | { zib } | { lr } | { k ´ op } | { sob } | { m ´ elk } | { rut } ];
+define SUFF1 [ %+Pej: { ak } | %+Dim: { et } | %+Aug: { ig } ];
+define SUFF2 [ %+Obv: {izm} | %+Prob: {ubap} | %+All: {ópot} ];
+define SUFF3 [ %+Pl: {il} | %+Pauc: {ejak} | %+NoNum: 0 ];
+define SUFF4 [ %+Nom: 0 | %+Acc: {am} | %+Dat: {ad} | %+Abl: {it} | %+Ben: {ek} | %+Gen: {ozk}(%+Inalien:{on}) | %+Ine: {ém}(%+Int:{el}) |
+ %+Ela: {ót}(%+Int:{el}) | %+Com: {ep}(%+Neg:{eg})];
+define Lexicon NROOT (SUFF1) (SUFF2) SUFF3 SUFF4;
+define intermediate [i->u, e->o, é->ó | p_, t_, k_];
+define Lexicon .o. intermediate;
